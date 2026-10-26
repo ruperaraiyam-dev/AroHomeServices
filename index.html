@@ -1,0 +1,1416 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0077b6">
+
+  <title>Active RO Services | RO Repair & Service at Your Doorstep</title>
+  <meta name="description" content="Looking for reliable RO water purifier repair, installation, filter replacement, leakage repair and TDS calibration? Contact Active RO Services for doorstep assistance.">
+  <meta name="robots" content="index, follow">
+
+  <style>
+    :root {
+      --blue: #0077b6;
+      --dark-blue: #023e8a;
+      --light-blue: #eaf7fc;
+      --orange: #ff8c24;
+      --green: #168447;
+      --white: #ffffff;
+      --dark: #172b3a;
+      --gray: #607481;
+      --border: #e1ebf0;
+      --shadow: 0 12px 35px rgba(2, 62, 138, 0.09);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button, input, select, textarea {
+      font: inherit;
+    }
+
+    button, .btn {
+      cursor: pointer;
+    }
+
+    .container {
+      width: min(1140px, 92%);
+      margin: auto;
+    }
+
+    .topbar {
+      background: var(--dark-blue);
+      color: white;
+      text-align: center;
+      padding: 7px 12px;
+      font-size: 13px;
+    }
+
+    header {
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--dark-blue);
+      font-size: 21px;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .logo-icon {
+      width: 43px;
+      height: 43px;
+      background: var(--light-blue);
+      color: var(--blue);
+      border-radius: 13px;
+      display: grid;
+      place-items: center;
+      font-size: 26px;
+    }
+
+    .logo small {
+      display: block;
+      font-size: 11px;
+      color: var(--gray);
+      font-weight: 500;
+      margin-top: 3px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 21px;
+      border: 0;
+      border-radius: 9px;
+      font-weight: 700;
+      transition: 0.25s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      filter: brightness(0.96);
+    }
+
+    .btn-orange {
+      background: var(--orange);
+      color: #1d2830;
+    }
+
+    .btn-blue {
+      background: var(--blue);
+      color: white;
+    }
+
+    .btn-green {
+      background: var(--green);
+      color: white;
+    }
+
+    .hero {
+      background:
+        radial-gradient(circle at 85% 20%, #d8f3ff 0, transparent 34%),
+        linear-gradient(130deg, #f6fcff, #e8f7fd);
+      padding: 76px 0 64px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: center;
+      gap: 55px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--dark-blue);
+      background: #d8effb;
+      padding: 7px 13px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(35px, 4.5vw, 54px);
+      line-height: 1.12;
+      letter-spacing: -1.5px;
+      margin-bottom: 20px;
+      color: #102f45;
+    }
+
+    h1 span {
+      color: var(--blue);
+    }
+
+    .hero p {
+      color: var(--gray);
+      font-size: 17px;
+      max-width: 540px;
+      margin-bottom: 25px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+
+    .trust-mini {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 17px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #355365;
+    }
+
+    .trust-mini span::before {
+      content: "✓";
+      color: var(--green);
+      font-weight: 900;
+      margin-right: 6px;
+    }
+
+    .hero-visual {
+      min-height: 355px;
+      background: linear-gradient(145deg, #c6edfa, #eaf9ff);
+      border-radius: 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 28px;
+      position: relative;
+      border: 1px solid #d5edf7;
+    }
+
+    .water-art {
+      width: 180px;
+      height: 220px;
+      background: white;
+      border: 5px solid #d5e4ed;
+      border-radius: 22px;
+      box-shadow: 0 20px 35px #023e8a18;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .water-art::before {
+      content: "";
+      width: 70px;
+      height: 8px;
+      background: #c7dce7;
+      border-radius: 8px;
+      position: absolute;
+      top: 12px;
+    }
+
+    .water-art .drop {
+      color: var(--blue);
+      font-size: 70px;
+      line-height: 1.3;
+    }
+
+    .water-art strong {
+      font-size: 16px;
+      color: var(--dark-blue);
+    }
+
+    .water-art small {
+      color: var(--gray);
+      font-size: 10px;
+    }
+
+    .floating-card {
+      background: white;
+      padding: 13px 17px;
+      border-radius: 13px;
+      box-shadow: var(--shadow);
+      position: absolute;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .floating-one {
+      left: 4%;
+      top: 18%;
+    }
+
+    .floating-two {
+      right: 3%;
+      bottom: 17%;
+    }
+
+    .hero-note {
+      text-align: center;
+      color: var(--gray);
+      font-size: 12px;
+      margin-top: 22px;
+    }
+
+    .booking-strip {
+      margin-top: -1px;
+      padding: 30px 0;
+      background: white;
+    }
+
+    .booking-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .booking-card h2 {
+      font-size: 23px;
+      margin-bottom: 4px;
+    }
+
+    .booking-card > p {
+      color: var(--gray);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .booking-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr auto;
+      gap: 12px;
+      align-items: end;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .field label {
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #d6e1e8;
+      border-radius: 8px;
+      background: white;
+      color: var(--dark);
+      outline: none;
+    }
+
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px #0077b61a;
+    }
+
+    .field-full {
+      grid-column: 1 / -1;
+    }
+
+    section {
+      padding: 76px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 38px;
+    }
+
+    .section-heading .eyebrow {
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: clamp(27px, 3vw, 36px);
+      line-height: 1.25;
+      margin-bottom: 12px;
+      color: #102f45;
+    }
+
+    .section-heading p {
+      color: var(--gray);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+
+    .service-card {
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 23px 17px;
+      background: white;
+      transition: 0.25s;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      border-color: #a4d9ee;
+      box-shadow: var(--shadow);
+    }
+
+    .service-icon {
+      width: 53px;
+      height: 53px;
+      display: grid;
+      place-items: center;
+      background: var(--light-blue);
+      border-radius: 14px;
+      font-size: 27px;
+      margin-bottom: 17px;
+    }
+
+    .service-card h3 {
+      font-size: 17px;
+      line-height: 1.35;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: var(--gray);
+      font-size: 13px;
+      flex-grow: 1;
+      margin-bottom: 18px;
+    }
+
+    .text-link {
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 800;
+      border: 0;
+      background: transparent;
+      text-align: left;
+    }
+
+    .why {
+      background: #f2faff;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .why-card {
+      background: white;
+      border: 1px solid #e1eff6;
+      padding: 25px 20px;
+      border-radius: 15px;
+    }
+
+    .why-card .service-icon {
+      margin-bottom: 15px;
+    }
+
+    .why-card h3 {
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .why-card p {
+      font-size: 14px;
+      color: var(--gray);
+    }
+
+    .brand-note {
+      margin-top: 26px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--gray);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .review-card {
+      padding: 25px;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      background: white;
+    }
+
+    .stars {
+      color: #ed9b13;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .review-card p {
+      color: #465d6b;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .reviewer {
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .reviewer small {
+      display: block;
+      color: var(--gray);
+      font-weight: 400;
+    }
+
+    .reviews-note {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+      color: var(--gray);
+    }
+
+    .contact {
+      background: linear-gradient(135deg, #023e8a, #0077b6);
+      color: white;
+    }
+
+    .contact h2 {
+      color: white;
+    }
+
+    .contact .section-heading p {
+      color: #e0f4ff;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: start;
+    }
+
+    .contact-info {
+      display: grid;
+      gap: 15px;
+    }
+
+    .contact-item {
+      background: #ffffff12;
+      border: 1px solid #ffffff25;
+      border-radius: 12px;
+      padding: 17px;
+      display: flex;
+      gap: 13px;
+      align-items: flex-start;
+    }
+
+    .contact-item strong {
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .contact-item span {
+      font-size: 14px;
+      color: #e4f5ff;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-form {
+      background: white;
+      color: var(--dark);
+      border-radius: 16px;
+      padding: 25px;
+    }
+
+    .contact-form h3 {
+      font-size: 22px;
+      margin-bottom: 17px;
+    }
+
+    .contact-form .field {
+      margin-bottom: 13px;
+    }
+
+    .contact-form .btn {
+      width: 100%;
+    }
+
+    footer {
+      background: #062b42;
+      color: #d9e8f0;
+      padding: 32px 0 85px;
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 25px;
+      margin-bottom: 22px;
+    }
+
+    .footer-top h3 {
+      color: white;
+      margin-bottom: 7px;
+    }
+
+    .footer-top p {
+      max-width: 580px;
+      font-size: 13px;
+    }
+
+    .disclaimer {
+      padding-top: 18px;
+      border-top: 1px solid #ffffff24;
+      font-size: 12px;
+      color: #bcd0dc;
+    }
+
+    .copyright {
+      margin-top: 13px;
+      font-size: 12px;
+      color: #bcd0dc;
+    }
+
+    .floating-actions {
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      z-index: 150;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .floating-actions a {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 22px;
+      color: white;
+      box-shadow: 0 5px 18px #001d2c35;
+    }
+
+    .float-whatsapp {
+      background: #20b95a;
+    }
+
+    .float-call {
+      background: var(--orange);
+      color: #172b3a !important;
+    }
+
+    /* Booking modal */
+    .modal {
+      position: fixed;
+      inset: 0;
+      z-index: 500;
+      background: #061c2bcc;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      overflow-y: auto;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .modal-content {
+      width: min(510px, 100%);
+      background: white;
+      border-radius: 18px;
+      padding: 28px;
+      position: relative;
+      max-height: 95vh;
+      overflow-y: auto;
+      animation: pop 0.25s ease;
+    }
+
+    @keyframes pop {
+      from { opacity: 0; transform: translateY(12px) scale(0.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .modal-content h2 {
+      font-size: 25px;
+      padding-right: 30px;
+    }
+
+    .modal-content > p {
+      color: var(--gray);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 12px;
+      right: 15px;
+      width: 36px;
+      height: 36px;
+      border: 0;
+      background: #edf4f7;
+      border-radius: 50%;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .modal-content .field {
+      margin-bottom: 13px;
+    }
+
+    .modal-content .btn {
+      width: 100%;
+      margin-top: 4px;
+    }
+
+    .privacy-note {
+      font-size: 11px;
+      color: var(--gray);
+      margin-top: 12px;
+    }
+
+    @media (max-width: 950px) {
+      nav {
+        gap: 13px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .booking-form {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .booking-form > .btn {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .navbar {
+        min-height: 68px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .logo {
+        font-size: 18px;
+      }
+
+      .navbar > .btn {
+        padding: 10px 13px;
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 48px 0 35px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .hero-visual {
+        min-height: 300px;
+      }
+
+      .booking-form {
+        grid-template-columns: 1fr;
+      }
+
+      .field-full {
+        grid-column: auto;
+      }
+
+      section {
+        padding: 57px 0;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .service-card {
+        padding: 17px 13px;
+      }
+
+      .service-card h3 {
+        font-size: 15px;
+      }
+
+      .why-grid {
+        gap: 12px;
+      }
+
+      .why-card {
+        padding: 18px 14px;
+      }
+
+      .why-card h3 {
+        font-size: 15px;
+      }
+
+      .why-card p {
+        font-size: 13px;
+      }
+
+      .reviews-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-top {
+        flex-direction: column;
+      }
+
+      .floating-actions {
+        right: 12px;
+        bottom: 12px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    RO Repair • Installation • Maintenance &nbsp; | &nbsp; Service Hours: 6 AM – 8 PM
+  </div>
+
+  <header>
+    <div class="container navbar">
+      <a href="#home" class="logo" aria-label="Active RO Services home">
+        <span class="logo-icon">💧</span>
+        <span>Active RO Services<small>Reliable Service. Cleaner Water.</small></span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#why-us">Why Choose Us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn btn-orange" href="tel:9570268145">☎ Call Now</a>
+    </div>
+  </header>
+
+  <main>
+    
+
+
+    
+    <section class="hero" id="home">
+      
+        
+      <div class="container hero-grid">
+        <div>
+            
+          <span class="eyebrow">Your Local RO Service Partner</span>
+
+          <h1>Expert RO Repair & Services <span>At Your Doorstep</span></h1>
+
+          <p>
+            Having trouble with your water purifier? Get help with RO repair,
+            installation, filter replacement and regular maintenance.
+            Convenient doorstep service for homes and businesses.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-orange" href="tel:9570268145">☎ Call Now</a>
+            <button class="btn btn-green" type="button" onclick="openBooking()">
+              Book a Technician
+            </button>
+          </div>
+
+          <div class="trust-mini">
+            <span>Transparent Pricing</span>
+            <span>Doorstep Assistance</span>
+            <span>Multiple RO Brands</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Water purifier service illustration">
+          <div class="floating-card floating-one">🔧 Repair & Maintenance</div>
+          <div class="water-art">
+            <div class="drop">💧</div>
+            <strong>PURE WATER</strong>
+            <small>RO SERVICE & CARE</small>
+          </div>
+          <div class="floating-card floating-two">✓ Home Service</div>
+          <div class="hero-note">
+            Professional care for your water purifier
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-strip" aria-label="Quick booking">
+      <div class="container">
+        <div class="booking-card">
+          <h2>Book Your RO Technician</h2>
+          <p>Tell us what you need. Submit your details to start a WhatsApp enquiry.</p>
+
+          <form class="booking-form" id="quickForm">
+            <div class="field">
+              <label for="quickName">Your Name</label>
+              <input id="quickName" name="name" type="text"
+                     placeholder="Enter your name" autocomplete="name" required>
+            </div>
+
+            <div class="field">
+              <label for="quickPhone">Mobile Number</label>
+              <input id="quickPhone" name="phone" type="tel"
+                     placeholder="10-digit mobile number"
+                     inputmode="numeric" pattern="[6-9][0-9]{9}"
+                     maxlength="10" autocomplete="tel" required>
+            </div>
+
+            <div class="field">
+              <label for="quickService">Select Service</label>
+              <select id="quickService" name="service" required>
+                <option value="">Choose a service</option>
+                <option>RO Installation</option>
+                <option>Periodic Servicing</option>
+                <option>Filter / Membrane Replacement</option>
+                <option>Water Leakage Repair</option>
+                <option>TDS Calibration</option>
+                <option>Other RO Problem</option>
+              </select>
+            </div>
+
+            <button class="btn btn-blue" type="submit">Book Now →</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">What We Do</span>
+          <h2>Our RO Repair & Maintenance Services</h2>
+          <p>From installation to troubleshooting, get assistance for common water purifier problems.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">🔧</div>
+            <h3>RO Installation</h3>
+            <p>Installation assistance and setup for compatible domestic and commercial purifiers.</p>
+            <button class="text-link" onclick="openBooking('RO Installation')">Request Service →</button>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🛠️</div>
+            <h3>Periodic Servicing</h3>
+            <p>Routine inspection, cleaning and maintenance to help your purifier work properly.</p>
+            <button class="text-link" onclick="openBooking('Periodic Servicing')">Request Service →</button>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">💧</div>
+            <h3>Filter & Membrane Replacement</h3>
+            <p>Replacement of compatible filters and membranes when required.</p>
+            <button class="text-link" onclick="openBooking('Filter / Membrane Replacement')">Request Service →</button>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🚰</div>
+            <h3>Water Leakage Repair</h3>
+            <p>Inspection of leaking pipes, fittings, connectors and purifier components.</p>
+            <button class="text-link" onclick="openBooking('Water Leakage Repair')">Request Service →</button>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">📊</div>
+            <h3>TDS Calibration</h3>
+            <p>TDS measurement and adjustment recommendations based on the purifier system.</p>
+            <button class="text-link" onclick="openBooking('TDS Calibration')">Request Service →</button>
+          </article>
+        </div>
+
+        <p class="brand-note">
+          We provide service assistance for compatible models from major RO brands.
+          Brand-specific parts and service availability may vary by model.
+        </p>
+      </div>
+    </section>
+
+    <section class="why" id="why-us">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">The Active Advantage</span>
+          <h2>Why Choose Active RO Services?</h2>
+          <p>Clear communication, convenient service and a focus on customer satisfaction.</p>
+        </div>
+
+        <div class="why-grid">
+          <article class="why-card">
+            <div class="service-icon">✅</div>
+            <h3>Genuine Spare Parts</h3>
+            <p>Compatible quality replacement parts, with genuine branded parts where available and verified.</p>
+          </article>
+
+          <article class="why-card">
+            <div class="service-icon">⏱️</div>
+            <h3>Quick Response</h3>
+            <p>We aim to respond promptly. A 90-minute response is a target, not a guaranteed arrival time.</p>
+          </article>
+
+          <article class="why-card">
+            <div class="service-icon">👨‍🔧</div>
+            <h3>Skilled Technicians</h3>
+            <p>Technicians with relevant experience in RO installation, maintenance and troubleshooting.</p>
+          </article>
+
+          <article class="why-card">
+            <div class="service-icon">💰</div>
+            <h3>Affordable Pricing</h3>
+            <p>Ask about service charges and parts costs before work begins. No undisclosed charges.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Customer Experience</span>
+          <h2>What Customers Say</h2>
+          <p>We believe in reliable service, honest communication and respectful doorstep assistance.</p>
+        </div>
+
+        <!-- Replace these sample cards with real customer reviews and permission-based names. -->
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="stars" aria-label="Sample five-star rating">★★★★★</div>
+            <p>“Add a real customer review about the technician's service, communication and overall experience here.”</p>
+            <div class="reviewer">Customer Review 1<small>Replace with an approved customer name</small></div>
+          </article>
+
+          <article class="review-card">
+            <div class="stars" aria-label="Sample five-star rating">★★★★★</div>
+            <p>“Add a genuine review about RO servicing, pricing transparency or repair quality here.”</p>
+            <div class="reviewer">Customer Review 2<small>Replace with an approved customer name</small></div>
+          </article>
+
+          <article class="review-card">
+            <div class="stars" aria-label="Sample five-star rating">★★★★★</div>
+            <p>“Add real feedback from a customer who has used your service.”</p>
+            <div class="reviewer">Customer Review 3<small>Replace with an approved customer name</small></div>
+          </article>
+        </div>
+
+        <p class="reviews-note">
+          These are sample placeholders, not verified customer testimonials. Publish only genuine reviews.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">We're Here to Help</span>
+          <h2>Need RO Service? Contact Us Today</h2>
+          <p>Tell us about your purifier problem and your location so we can discuss the next steps.</p>
+          <p>Sakri, Darbhanga, Madhubani, Jhanjharpur ,Shivram, Patna </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div>📞</div>
+              <div>
+                <strong>Call Us</strong>
+                <span><a href="tel:9570268145">9570268145</a></span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div>💬</div>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>Send your service request and location.</span>
+                <br>
+                <a class="btn btn-green" style="margin-top:10px;padding:9px 14px"
+                   href="https://wa.me/919570268145" target="_blank" rel="noopener noreferrer">
+                  Chat on WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div>🕗</div>
+              <div>
+                <strong>Operating Hours</strong>
+                <span>Daily, 6:00 AM – 8:00 PM</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div>📍</div>
+              <div>
+                <strong>Service Area</strong>
+                <span>Contact us to confirm service availability in your locality.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Request a Callback</h3>
+            <form id="contactForm">
+              <div class="field">
+                <label for="contactName">Full Name</label>
+                <input id="contactName" name="name" required
+                       autocomplete="name" placeholder="Your full name">
+              </div>
+
+              <div class="field">
+                <label for="contactPhone">Mobile Number</label>
+                <input id="contactPhone" name="phone" type="tel"
+                       inputmode="numeric" pattern="[6-9][0-9]{9}"
+                       maxlength="10" required autocomplete="tel"
+                       placeholder="10-digit mobile number">
+              </div>
+
+              <div class="field">
+                <label for="contactAddress">Address / Locality</label>
+                <textarea id="contactAddress" name="address" rows="3"
+                          required autocomplete="street-address"
+                          placeholder="Your area and address"></textarea>
+              </div>
+
+              <div class="field">
+                <label for="contactService">Service Required</label>
+                <select id="contactService" name="service" required>
+                  <option value="">Select a service</option>
+                  <option>RO Installation</option>
+                  <option>Periodic Servicing</option>
+                  <option>Filter / Membrane Replacement</option>
+                  <option>Water Leakage Repair</option>
+                  <option>TDS Calibration</option>
+                  <option>Other RO Problem</option>
+                </select>
+              </div>
+
+              <button class="btn btn-blue" type="submit">Send Request on WhatsApp →</button>
+              <p class="privacy-note">Your request will open WhatsApp for you to review and send. Nothing is sent automatically.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <h3>💧 Active RO Services</h3>
+          <p>Doorstep RO repair, installation and maintenance assistance for homes and businesses.</p>
+        </div>
+        <a href="tel:9570268145" class="btn btn-orange">☎ 9570268145</a>
+      </div>
+
+      <div class="disclaimer">
+        <strong>Disclaimer:</strong>
+        We are an independent service provider and not directly affiliated with
+        KENT RO Systems Ltd. All product names and trademarks belong to their
+        respective owners.
+      </div>
+
+      <div class="copyright">
+        © <span id="year"></span> Active RO Services. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-actions">
+    <a class="float-whatsapp"
+       href="https://wa.me/919570268145"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Chat on WhatsApp">☏</a>
+    <a class="float-call" href="tel:9570268145" aria-label="Call Active RO Services">☎</a>
+  </div>
+
+  <!-- Booking popup -->
+  <div class="modal" id="bookingModal" role="dialog"
+       aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="close-modal" type="button"
+              onclick="closeBooking()" aria-label="Close popup">×</button>
+
+      <h2 id="modalTitle">Book a Technician</h2>
+      <p>Enter your details and continue to WhatsApp to send your service enquiry.</p>
+
+      <form id="modalForm">
+        <div class="field">
+          <label for="modalName">Customer Name</label>
+          <input id="modalName" name="name" required autocomplete="name"
+                 placeholder="Enter your full name">
+        </div>
+
+        <div class="field">
+          <label for="modalPhone">Mobile Number</label>
+          <input id="modalPhone" name="phone" type="tel"
+                 inputmode="numeric" pattern="[6-9][0-9]{9}"
+                 maxlength="10" required autocomplete="tel"
+                 placeholder="10-digit mobile number">
+        </div>
+
+        <div class="field">
+          <label for="modalAddress">Full Address / Location</label>
+          <textarea id="modalAddress" name="address" rows="3" required
+                    autocomplete="street-address"
+                    placeholder="Enter your address or locality"></textarea>
+        </div>
+
+        <div class="field">
+          <label for="modalService">Selected Service</label>
+          <select id="modalService" name="service" required>
+            <option value="">Choose a service</option>
+            <option>RO Installation</option>
+            <option>Periodic Servicing</option>
+            <option>Filter / Membrane Replacement</option>
+            <option>Water Leakage Repair</option>
+            <option>TDS Calibration</option>
+            <option>Other RO Problem</option>
+          </select>
+        </div>
+
+        <button class="btn btn-green" type="submit">Continue to WhatsApp →</button>
+        <div class="privacy-note">Please check your details before sending your message.</div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    "use strict";
+
+    // Business contact configuration
+    const BUSINESS_PHONE = "919570268145";
+
+    const modal = document.getElementById("bookingModal");
+    const modalForm = document.getElementById("modalForm");
+    const quickForm = document.getElementById("quickForm");
+    const contactForm = document.getElementById("contactForm");
+
+    // Set current year automatically.
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Open the booking popup and optionally select a service.
+    function openBooking(service = "") {
+      modal.classList.add("active");
+
+      if (service) {
+        document.getElementById("modalService").value = service;
+      }
+
+      document.body.style.overflow = "hidden";
+      setTimeout(() => document.getElementById("modalName").focus(), 50);
+    }
+
+    // Close the booking popup.
+    function closeBooking() {
+      modal.classList.remove("active");
+      document.body.style.overflow = "";
+    }
+
+    // Close popup when the user clicks the dark background.
+    modal.addEventListener("click", function(event) {
+      if (event.target === modal) {
+        closeBooking();
+      }
+    });
+
+    // Close popup with the Escape key.
+    document.addEventListener("keydown", function(event) {
+      if (event.key === "Escape" && modal.classList.contains("active")) {
+        closeBooking();
+      }
+    });
+
+    // Build a WhatsApp message and let the customer send it manually.
+    function sendWhatsAppRequest(details) {
+      const message = [
+        "Hello Active RO Services!",
+        "",
+        "I would like to request RO service.",
+        "",
+        "Name: " + details.name,
+        "Mobile: " + details.phone,
+        "Address: " + (details.address || "Not provided"),
+        "Service: " + details.service,
+        "",
+        "Please contact me regarding availability and charges."
+      ].join("\n");
+
+      const url = "https://wa.me/" + BUSINESS_PHONE +
+                  "?text=" + encodeURIComponent(message);
+
+      // Open WhatsApp only after successful form validation.
+      const whatsappWindow = window.open(url, "_blank");
+
+      // Fallback if the browser blocks popups.
+      if (!whatsappWindow) {
+        window.location.href = url;
+      }
+    }
+
+    // Collect form data safely by reading named input fields.
+    function getFormDetails(form) {
+      const data = new FormData(form);
+
+      return {
+        name: String(data.get("name") || "").trim(),
+        phone: String(data.get("phone") || "").trim(),
+        address: String(data.get("address") || "").trim(),
+        service: String(data.get("service") || "").trim()
+      };
+    }
+
+    // Quick booking form: opens WhatsApp with the enquiry.
+    quickForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      if (!quickForm.reportValidity()) return;
+
+      const details = getFormDetails(quickForm);
+      sendWhatsAppRequest(details);
+    });
+
+    // Full booking popup: includes address and selected service.
+    modalForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      if (!modalForm.reportValidity()) return;
+
+      const details = getFormDetails(modalForm);
+      sendWhatsAppRequest(details);
+    });
+
+    // Contact callback form: also sends the address and service.
+    contactForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      if (!contactForm.reportValidity()) return;
+
+      const details = getFormDetails(contactForm);
+      sendWhatsAppRequest(details);
+    });
+  </script>
+
+</body>
+</html>
+```
